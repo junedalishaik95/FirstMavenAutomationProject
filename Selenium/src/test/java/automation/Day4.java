@@ -7,15 +7,16 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Day4 {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.gecko.driver", "C:\\java\\webdrivers\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\java\\webdrivers\\chromedriver.exe");
 
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
